@@ -1,13 +1,4 @@
 import { SiteContent } from './types';
-import { 
-  ClipboardCheck, 
-  Droplet, 
-  Stethoscope, 
-  Factory, 
-  Anchor, 
-  Truck, 
-  HardHat 
-} from 'lucide-react';
 
 export const CONTENT: Record<'en' | 'ar', SiteContent> = {
   ar: {
@@ -26,7 +17,7 @@ export const CONTENT: Record<'en' | 'ar', SiteContent> = {
     about: {
       title: "من نحن؟",
       description: [
-        "شركة البصمة الدولية : هي شركة تفتيش ليبية 100٪ ذات مسئولية محدودة أنشئت في عام 2017م متخصصة في تقديم خدمات الفحص والتفتيش والإختبارات المختلفة والمطابقة وضمان مراقبة الجودة.",
+        "شركة البصمة الدولية : هي شركة تفتيش ليبية 100٪ ذات مسئولية محدودة أنشئت في عام 2025م متخصصة في تقديم خدمات الفحص والتفتيش والإختبارات المختلفة والمطابقة وضمان مراقبة الجودة.",
         "أنشئت في المقام الأول بشأن تلبية احتياجات المستوردين والمقاولين والمصنعين والجهات الحكومية لخدمات الفحص والاختبارات المتنوعة ولتقديم خدمات ضمان مراقبة الجودة.",
         "تعمل الشركة كطرف ثالث محايد لضمان حصول كل من طرفي التعاقد على حقوقه طبقاً لشروط التعاقد بينهما والشروط التشريعية والتنظيمية وذلك في مجالات البيع و الشراء بأنواعها و ضبط الجودة أثناء العملية الإنتاجية."
       ]
@@ -69,15 +60,10 @@ export const CONTENT: Record<'en' | 'ar', SiteContent> = {
     contact: {
       title: "تواصل معنا",
       address: "ليبيا، جنزور",
-      phone: "+218 00 0000000",
-      email: "info@albsma-aldwlha.com",
+      phone: "+218 94 239 6162",
+      email: "info@albsma-aldwlha.ly",
       getInTouch: "ابقى على تواصل",
       sendMessage: "إرسال رسالة"
-    },
-    ai: {
-      title: "المساعد الذكي",
-      placeholder: "اسألنا عن خدماتنا...",
-      disclaimer: "هذا رد آلي يعتمد على الذكاء الاصطناعي."
     }
   },
   en: {
@@ -96,7 +82,7 @@ export const CONTENT: Record<'en' | 'ar', SiteContent> = {
     about: {
       title: "Who We Are",
       description: [
-        "Albsma-aldwlha is a 100% Libyan limited liability inspection company established in 2017, specializing in providing inspection, testing, conformity assessment, and quality control assurance services.",
+        "Albsma-aldwlha is a 100% Libyan limited liability inspection company established in 2025, specializing in providing inspection, testing, conformity assessment, and quality control assurance services.",
         "Founded primarily to meet the needs of importers, contractors, manufacturers, and government entities for various inspection and testing services and to provide quality control assurance.",
         "The company operates as a neutral third party to ensure that both contracting parties receive their rights according to contractual terms and legislative regulations in various purchasing and sales fields, as well as quality control during the production process."
       ]
@@ -139,43 +125,10 @@ export const CONTENT: Record<'en' | 'ar', SiteContent> = {
     contact: {
       title: "Contact Us",
       address: "Janzoor, Libya",
-      phone: "+218 00 0000000",
-      email: "info@albsma-aldwlha.com",
+      phone: "+218 94 239 6162",
+      email: "info@albsma-aldwlha.ly",
       getInTouch: "Get In Touch",
       sendMessage: "Send Message"
-    },
-    ai: {
-      title: "AI Assistant",
-      placeholder: "Ask about our services...",
-      disclaimer: "This is an AI-generated response."
     }
   }
 };
-
-export const SYSTEM_INSTRUCTION = `
-You are a helpful customer support assistant for "Albsma-aldwlha" (International Conformity Inspection).
-Use the following information to answer user queries.
-If the query is in Arabic, answer in Arabic. If in English, answer in English.
-Keep answers concise and professional.
-
-Company Info:
-- Name: Albsma-aldwlha (البصمة الدولية).
-- Location: Janzoor, Libya.
-- 100% Libyan Limited Liability Company, est 2017.
-- Compliant with ISO/IEC 17020.
-- Acts as a neutral third party for quality control.
-
-Services:
-- Food Inspection (grains, seeds, raw materials).
-- Medical Inspection (medicines, equipment).
-- Industrial Inspection (machinery, supplies).
-- Petroleum Inspection (crude oil, drilling equipment).
-- Pipeline Inspection.
-- Heavy Machinery (cranes).
-- Ports, Airports, Marine Platforms.
-
-Goals:
-- Prevent fraud.
-- Ensure high quality.
-- Customer loyalty.
-`;

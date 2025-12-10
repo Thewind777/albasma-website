@@ -54,9 +54,4 @@ export interface SiteContent {
     getInTouch: string;
     sendMessage: string;
   };
-  ai: {
-    title: string;
-    placeholder: string;
-    disclaimer: string;
-  }
 }

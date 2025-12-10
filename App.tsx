@@ -19,7 +19,6 @@ import {
     HardHat, 
     Activity 
 } from 'lucide-react';
-import { AIChat } from './components/AIChat';
 
 // Helper component for Icons
 const getIcon = (iconName: string, className: string) => {
@@ -237,7 +236,7 @@ const App: React.FC = () => {
                                         <MapPin size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-gray-900">Address</h4>
+                                        <h4 className="font-bold text-gray-900">{isRTL ? 'العنوان' : 'Address'}</h4>
                                         <p className="text-gray-600">{content.contact.address}</p>
                                     </div>
                                 </div>
@@ -246,8 +245,8 @@ const App: React.FC = () => {
                                         <Phone size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-gray-900">Phone</h4>
-                                        <p className="text-gray-600 dir-ltr">{content.contact.phone}</p>
+                                        <h4 className="font-bold text-gray-900">{isRTL ? 'الهاتف' : 'Phone'}</h4>
+                                        <p className="text-gray-600" dir="ltr">{content.contact.phone}</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-6">
@@ -255,7 +254,7 @@ const App: React.FC = () => {
                                         <Mail size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-gray-900">Email</h4>
+                                        <h4 className="font-bold text-gray-900">{isRTL ? 'البريد الإلكتروني' : 'Email'}</h4>
                                         <p className="text-gray-600">{content.contact.email}</p>
                                     </div>
                                 </div>
@@ -300,9 +299,6 @@ const App: React.FC = () => {
                     </p>
                 </div>
             </footer>
-
-            {/* AI Chat Widget */}
-            <AIChat content={content.ai} isRTL={isRTL} />
         </div>
     );
 };
