@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { CONTENT } from './constants';
 import { Language, ServiceItem } from './types';
-import { 
-    Menu, 
-    X, 
-    Globe, 
-    ChevronRight, 
-    ChevronLeft, 
-    CheckCircle2, 
-    MapPin, 
-    Phone, 
-    Mail, 
-    Wheat, 
-    Stethoscope, 
-    Factory, 
-    Droplet, 
-    Anchor, 
-    HardHat, 
-    Activity 
+import {
+    Menu,
+    X,
+    Globe,
+    ChevronRight,
+    ChevronLeft,
+    CheckCircle2,
+    MapPin,
+    Phone,
+    Mail,
+    Wheat,
+    Stethoscope,
+    Factory,
+    Droplet,
+    Anchor,
+    HardHat,
+    Activity
 } from 'lucide-react';
 
 // Helper component for Icons
@@ -60,19 +60,18 @@ const App: React.FC = () => {
 
     return (
         <div className={`min-h-screen font-sans ${isRTL ? 'font-arabic' : ''} text-brand-900 bg-gray-50`}>
-            
+
             {/* Navigation */}
             <nav className="fixed w-full z-40 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
                 <div className="container mx-auto px-4 md:px-8">
                     <div className="flex items-center justify-between h-20">
                         {/* Logo */}
                         <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollTo('hero')}>
-                            <div className="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-md">
-                                {isRTL ? 'ب' : 'A'}
-                            </div>
-                            <span className="font-bold text-xl md:text-2xl text-brand-900 tracking-tight">
-                                {isRTL ? 'البصمة الدولية' : 'Albsma-aldwlha'}
-                            </span>
+                            <img
+                                src="/logo-full.png"
+                                alt={isRTL ? 'البصمة الدولية' : 'Albsma-aldwlha'}
+                                className="h-12 w-auto object-contain"
+                            />
                         </div>
 
                         {/* Desktop Menu */}
@@ -82,8 +81,8 @@ const App: React.FC = () => {
                             <button onClick={() => scrollTo('services')} className="hover:text-brand-600 font-medium transition-colors">{content.nav.services}</button>
                             <button onClick={() => scrollTo('vision')} className="hover:text-brand-600 font-medium transition-colors">{content.nav.vision}</button>
                             <button onClick={() => scrollTo('contact')} className="hover:text-brand-600 font-medium transition-colors">{content.nav.contact}</button>
-                            
-                            <button 
+
+                            <button
                                 onClick={toggleLang}
                                 className="flex items-center gap-1 px-4 py-2 rounded-full border border-gray-200 hover:border-brand-600 hover:text-brand-600 transition-all"
                             >
@@ -118,7 +117,7 @@ const App: React.FC = () => {
             <section id="hero" className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-brand-900 text-white">
                 <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
                 <div className="absolute inset-0 z-0 bg-gradient-to-t from-brand-900 via-brand-900/80 to-transparent"></div>
-                
+
                 <div className="container mx-auto px-4 relative z-10 text-center md:text-start flex flex-col md:flex-row items-center gap-12">
                     <div className="flex-1 space-y-6">
                         <div className="inline-block px-4 py-1 bg-brand-600/30 border border-brand-500/30 rounded-full text-brand-400 text-sm font-semibold mb-2">
@@ -130,7 +129,7 @@ const App: React.FC = () => {
                         <p className="text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed">
                             {content.hero.subtitle}
                         </p>
-                        <button 
+                        <button
                             onClick={() => scrollTo('services')}
                             className="inline-flex items-center gap-2 bg-brand-accent hover:bg-amber-600 text-brand-900 font-bold py-4 px-8 rounded-lg shadow-lg shadow-amber-500/20 transition-transform hover:-translate-y-1"
                         >
@@ -140,10 +139,10 @@ const App: React.FC = () => {
                     </div>
                     {/* Abstract Visual Shape */}
                     <div className="flex-1 hidden md:block relative">
-                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-600/20 rounded-full blur-3xl"></div>
-                         <img 
-                            src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800" 
-                            alt="Inspection Worker" 
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-600/20 rounded-full blur-3xl"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800"
+                            alt="Inspection Worker"
                             className="relative rounded-2xl shadow-2xl border-4 border-brand-800 rotate-2 hover:rotate-0 transition-all duration-500"
                         />
                     </div>
@@ -264,18 +263,18 @@ const App: React.FC = () => {
                         <div className="flex-1 bg-gray-50 p-8 rounded-2xl">
                             <h3 className="text-xl font-bold mb-6">{content.contact.getInTouch}</h3>
                             <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                                <input 
-                                    type="text" 
+                                <input
+                                    type="text"
                                     placeholder={lang === 'en' ? "Name" : "الاسم"}
                                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-all"
                                 />
-                                <input 
-                                    type="email" 
+                                <input
+                                    type="email"
                                     placeholder={lang === 'en' ? "Email" : "البريد الإلكتروني"}
                                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-all"
                                 />
-                                <textarea 
-                                    rows={4} 
+                                <textarea
+                                    rows={4}
                                     placeholder={lang === 'en' ? "Message" : "الرسالة"}
                                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-all"
                                 ></textarea>
