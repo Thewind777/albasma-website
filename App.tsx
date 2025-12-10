@@ -68,9 +68,9 @@ const App: React.FC = () => {
                         {/* Logo */}
                         <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollTo('hero')}>
                             <img
-                                src="/logo-full.png"
+                                src="/logo-seal.jpg"
                                 alt={isRTL ? 'البصمة الدولية' : 'Albsma-aldwlha'}
-                                className="h-12 w-auto object-contain"
+                                className="h-14 w-14 rounded-full border border-brand-200 shadow-sm object-cover"
                             />
                         </div>
 
