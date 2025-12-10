@@ -156,7 +156,7 @@ const App: React.FC = () => {
                         <div className="flex-1 space-y-6">
                             <h2 className="text-3xl md:text-4xl font-bold text-brand-900 relative inline-block">
                                 {content.about.title}
-                                <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-brand-accent"></span>
+                                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-brand-accent"></span>
                             </h2>
                             <div className="space-y-4 text-gray-600 leading-relaxed">
                                 {content.about.description.map((para, idx) => (
