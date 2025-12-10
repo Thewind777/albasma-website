@@ -141,9 +141,9 @@ const App: React.FC = () => {
                     <div className="flex-1 hidden md:block relative">
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-600/20 rounded-full blur-3xl"></div>
                         <img
-                            src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800"
-                            alt="Inspection Worker"
-                            className="relative rounded-2xl shadow-2xl border-4 border-brand-800 rotate-2 hover:rotate-0 transition-all duration-500"
+                            src="/logo-seal.jpg"
+                            alt="Albasma International Seal"
+                            className="relative rounded-full shadow-2xl border-4 border-brand-500/50 w-full max-w-md mx-auto animate-float"
                         />
                     </div>
                 </div>
@@ -290,6 +290,9 @@ const App: React.FC = () => {
             {/* Footer */}
             <footer className="bg-brand-900 text-gray-400 py-12 border-t border-brand-800">
                 <div className="container mx-auto px-4 text-center">
+                    <div className="flex justify-center mb-6">
+                        <img src="/logo-seal.jpg" alt="Albasma Seal" className="w-24 h-24 rounded-full shadow-lg border-2 border-brand-600" />
+                    </div>
                     <p className="mb-4 text-white font-bold text-xl">
                         {isRTL ? 'شركة البصمة الدولية' : 'Albsma-aldwlha'}
                     </p>
