@@ -11,27 +11,27 @@ export const CONTENT: Record<'en' | 'ar', SiteContent> = {
     },
     hero: {
       title: "شركة البصمة الدولية للتفتيش و المطابقة",
-      subtitle: "شريكك الموثوق لضمان الجودة والمطابقة في جميع القطاعات الصناعية والخدمية",
+      subtitle: "شريكك الموثوق لضمان الجودة و المطابقة في جميع القطاعات الصناعية و الخدمية",
       cta: "اكتشف خدماتنا"
     },
     about: {
       title: "من نحن؟",
       description: [
-        "شركة البصمة الدولية للتفتيش و المطابقة: هي شركة تفتيش ليبية 100٪ ذات مسئولية محدودة أنشئت في عام 2025م متخصصة في تقديم خدمات الفحص والتفتيش والإختبارات المختلفة والمطابقة وضمان مراقبة الجودة.",
-        "أنشئت في المقام الأول بشأن تلبية احتياجات المستوردين والمقاولين والمصنعين والجهات الحكومية لخدمات الفحص والاختبارات المتنوعة ولتقديم خدمات ضمان مراقبة الجودة.",
-        "تعمل الشركة كطرف ثالث محايد لضمان حصول كل من طرفي التعاقد على حقوقه طبقاً لشروط التعاقد بينهما والشروط التشريعية والتنظيمية وذلك في مجالات البيع و الشراء بأنواعها و ضبط الجودة أثناء العملية الإنتاجية."
+        "شركة البصمة الدولية للتفتيش و المطابقة: هي شركة تفتيش ليبية 100٪ ذات مسئولية محدودة أنشئت في عام 2025م متخصصة في تقديم خدمات الفحص و التفتيش و الإختبارات المختلفة و المطابقة و ضمان مراقبة الجودة.",
+        "أنشئت في المقام الأول بشأن تلبية احتياجات المستوردين و المقاولين و المصنعين و الجهات الحكومية لخدمات الفحص و الاختبارات المتنوعة و لتقديم خدمات ضمان مراقبة الجودة.",
+        "تعمل الشركة كطرف ثالث محايد لضمان حصول كل من طرفي التعاقد على حقوقه طبقاً لشروط التعاقد بينهما و الشروط التشريعية و التنظيمية و ذلك في مجالات البيع و الشراء بأنواعها و ضبط الجودة أثناء العملية الإنتاجية."
       ]
     },
     vision: {
-      title: "رؤيتنا وأهدافنا",
-      description: "نسعى لتحقيق بيئة استثمارية آمنة و مستقرة ونافعة وذلك من خلال التميز في تقديم خدمات الفحص والمعاينة وتأكيد ضبط ومراقبة الجودة على المشاريع المختلفة بعدالة وحيادية وشفافية عالية.",
+      title: "رؤيتنا و أهدافنا",
+      description: "نسعى لتحقيق بيئة استثمارية آمنة و مستقرة و نافعة و ذلك من خلال التميز في تقديم خدمات الفحص و المعاينة و تأكيد ضبط و مراقبة الجودة على المشاريع المختلفة بعدالة و حيادية و شفافية عالية.",
       points: [
-        "الالتزام الكامل بالأصول المهنية الدولية ومعايير نظم الجودة ووفقاً لمتطلبات المواصفة القياسية الدولية ISO/IEC 17020.",
-        "المساعدة في حماية المجتمع عن طريق المشاركة في منع الغش والخداع التجاري والصناعي.",
-        "تشجيع استخدام مبادئ وتقنيات مفاهيم الجودة.",
-        "ضمان تقديم خدمات متقنة وعالية الجودة.",
-        "توفير أكبر عدد ممكن ومتنوع من خدمات الفحص والتفتيش وضمان ضبط ومراقبة الجودة.",
-        "السعي إلى ما وراء رضا الزبائن وكسب ولائهم."
+        "الالتزام الكامل بالأصول المهنية الدولية و معايير نظم الجودة و وفقاً لمتطلبات المواصفة القياسية الدولية ISO/IEC 17020.",
+        "المساعدة في حماية المجتمع عن طريق المشاركة في منع الغش و الخداع التجاري و الصناعي.",
+        "تشجيع استخدام مبادئ و تقنيات مفاهيم الجودة.",
+        "ضمان تقديم خدمات متقنة و عالية الجودة.",
+        "توفير أكبر عدد ممكن و متنوع من خدمات الفحص و التفتيش و ضمان ضبط و مراقبة الجودة.",
+        "السعي إلى ما وراء رضا الزبائن و كسب ولائهم."
       ]
     },
     services: {
@@ -40,26 +40,26 @@ export const CONTENT: Record<'en' | 'ar', SiteContent> = {
         { title: "التفتيش الغذائي:", description: "المنتجات الغذائية – المواد الخام – الحبوب – البذور.", icon: "Wheat" },
         { title: "التفتيش الطبي:", description: "الأدوية – المعدات الطبية - مستلزمات المعامل.", icon: "Stethoscope" },
         { title: "التفتيش الصناعي:", description: "مواد نصف مصنعة – مستلزمات التشغيل – الآلات.", icon: "Factory" },
-        { title: "التفتيش النفطي:", description: "المنتجات النفطية – مشتقات نفطية – بتروكيماويات – معدات الانتاج والحفر.", icon: "Droplet" },
+        { title: "التفتيش النفطي:", description: "المنتجات النفطية – مشتقات نفطية – بتروكيماويات – معدات الانتاج و الحفر.", icon: "Droplet" },
         { title: "خطوط الأنابيب:", description: "التفتيش المتخصص على خطوط الأنابيب.", icon: "Pipeline" },
-        { title: "الآليات الثقيلة:", description: "التفتيش على الروافع وآلات المناولة والآليات الثقيلة.", icon: "HardHat" },
-        { title: "الموانئ والمطارات:", description: "التفتيش على الموانئ والمطارات والمنصات البحرية.", icon: "Anchor" },
+        { title: "الآليات الثقيلة:", description: "التفتيش على الروافع و آلات المناولة و الآليات الثقيلة.", icon: "HardHat" },
+        { title: "الموانئ و المطارات:", description: "التفتيش على الموانئ و المطارات و المنصات البحرية.", icon: "Anchor" },
       ]
     },
     features: {
-      title: "المزايا التنافسية",
+      title: "المزايا التنافسية:",
       items: [
-        "شركة ليبية متخصصة في مجالات الفحص والتفتيش وأنظمة الجودة.",
-        "توافر طاقـم متكامـل من الخبراء والمتخصصين في معظم المجالات الهندسية والفنية.",
-        "توفر الأجهزة والمعدات الضرورية لإجراءات الفحص والمعاينة.",
-        "تقديم أسعار منافسة وخدمات عالية الجودة.",
-        "الثقة المتنـامية لأعمالهـا من جميع القطاعات الصناعية والخدمية نتيجة لجودة أعمالها.",
-        "تعتمد الشركة على مجموعة من الخبرات يتوفر بها التخصص والخبرة والمهارات والتدريب المناسب."
+        "شركة ليبية متخصصة في مجالات الفحص و التفتيش و أنظمة الجودة.",
+        "توافر طاقـم متكامـل من الخبراء و المتخصصين في معظم المجالات الهندسية و الفنية.",
+        "توفر الأجهزة و المعدات الضرورية لإجراءات الفحص و المعاينة.",
+        "تقديم أسعار منافسة و خدمات عالية الجودة.",
+        "الثقة المتنـامية لأعمالهـا من جميع القطاعات الصناعية و الخدمية نتيجة لجودة أعمالها.",
+        "تعتمد الشركة على مجموعة من الخبرات يتوفر بها التخصص و الخبرة و المهارات و التدريب المناسب."
       ]
     },
     contact: {
       title: "تواصل معنا",
-      address: "جنزور، ليبيا",
+      address: "جنزور-ليبيا",
       phone: "+218 94 239 6162",
       email: "info@albsma-aldwlha.ly",
       getInTouch: "ابقى على تواصل",
@@ -75,14 +75,14 @@ export const CONTENT: Record<'en' | 'ar', SiteContent> = {
       contact: "Contact"
     },
     hero: {
-      title: "Albsma-aldwlha",
+      title: "Albasma-Aldawlia for Inspection and Conformity",
       subtitle: "Your trusted partner for quality assurance and conformity across all industrial and service sectors.",
       cta: "Explore Our Services"
     },
     about: {
-      title: "Who We Are",
+      title: "Who We Are?",
       description: [
-        "Albsma-aldwlha is a 100% Libyan limited liability inspection company established in 2025, specializing in providing inspection, testing, conformity assessment, and quality control assurance services.",
+        "Albasma-Aldawlia for Inspection and Conformity is a 100% Libyan limited liability inspection company established in 2025, specializing in providing inspection, testing, conformity assessment, and quality control assurance services.",
         "Founded primarily to meet the needs of importers, contractors, manufacturers, and government entities for various inspection and testing services and to provide quality control assurance.",
         "The company operates as a neutral third party to ensure that both contracting parties receive their rights according to contractual terms and legislative regulations in various purchasing and sales fields, as well as quality control during the production process."
       ]
@@ -102,17 +102,17 @@ export const CONTENT: Record<'en' | 'ar', SiteContent> = {
     services: {
       title: "Inspection Services",
       items: [
-        { title: "Food Inspection", description: "Food products, raw materials, grains, seeds.", icon: "Wheat" },
-        { title: "Medical Inspection", description: "Medicines, medical equipment, laboratory supplies.", icon: "Stethoscope" },
-        { title: "Industrial Inspection", description: "Semi-manufactured materials, operating supplies, machinery.", icon: "Factory" },
-        { title: "Petroleum Inspection", description: "Crude oil, petroleum derivatives, petrochemicals, drilling equipment.", icon: "Droplet" },
-        { title: "Pipelines", description: "Specialized pipeline inspection.", icon: "Pipeline" },
-        { title: "Heavy Machinery", description: "Inspection of cranes, handling machinery, and heavy equipment.", icon: "HardHat" },
-        { title: "Ports & Offshore", description: "Inspection of ports, airports, and marine platforms.", icon: "Anchor" },
+        { title: "Food Inspection:", description: "Food products, raw materials, grains, seeds.", icon: "Wheat" },
+        { title: "Medical Inspection:", description: "Medicines, medical equipment, laboratory supplies.", icon: "Stethoscope" },
+        { title: "Industrial Inspection:", description: "Semi-manufactured materials, operating supplies, machinery.", icon: "Factory" },
+        { title: "Petroleum Inspection:", description: "Crude oil, petroleum derivatives, petrochemicals, drilling equipment.", icon: "Droplet" },
+        { title: "Pipelines:", description: "Specialized pipeline inspection.", icon: "Pipeline" },
+        { title: "Heavy Machinery:", description: "Inspection of cranes, handling machinery, and heavy equipment.", icon: "HardHat" },
+        { title: "Ports & Offshore:", description: "Inspection of ports, airports, and marine platforms.", icon: "Anchor" },
       ]
     },
     features: {
-      title: "Competitive Advantages",
+      title: "Competitive Advantages:",
       items: [
         "A Libyan company specialized in inspection and quality systems.",
         "Integrated team of experts and specialists in most engineering and technical fields.",
@@ -124,7 +124,7 @@ export const CONTENT: Record<'en' | 'ar', SiteContent> = {
     },
     contact: {
       title: "Contact Us",
-      address: "Janzoor, Libya",
+      address: "Janzoor-Libya",
       phone: "+218 94 239 6162",
       email: "info@albsma-aldwlha.ly",
       getInTouch: "Get In Touch",

@@ -69,7 +69,7 @@ const App: React.FC = () => {
                         <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollTo('hero')}>
                             <img
                                 src="/logo-full.webp"
-                                alt={isRTL ? 'البصمة الدولية للتفتيش و المطابقة' : 'Albsma-aldwlha'}
+                                alt={isRTL ? 'البصمة الدولية للتفتيش و المطابقة' : 'Albasma-Aldawlia for Inspection and Conformity'}
                                 className="h-14 w-14 rounded-full border border-brand-200 shadow-sm object-cover"
                             />
                         </div>
@@ -149,13 +149,13 @@ const App: React.FC = () => {
             {/* About Section */}
             <section id="about" className="py-20 bg-white">
                 <div className="container mx-auto px-4">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-4">{content.about.title}</h2>
+                        <div className="h-1 w-24 bg-brand-accent mx-auto rounded-full"></div>
+                    </div>
                     <div className="flex flex-col md:flex-row gap-16 items-start">
                         <div className="flex-1 space-y-6">
-                            <h2 className="text-3xl md:text-4xl font-bold text-brand-900 relative inline-block">
-                                {content.about.title}
-                                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-brand-accent"></span>
-                            </h2>
-                            <div className="space-y-4 text-gray-600 leading-relaxed">
+                            <div className="space-y-4 text-gray-600 leading-relaxed text-justify">
                                 {content.about.description.map((para, idx) => (
                                     <p key={idx}>{para}</p>
                                 ))}
@@ -166,9 +166,7 @@ const App: React.FC = () => {
                             <ul className="space-y-4">
                                 {content.features.items.map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-3">
-                                        <div className="mt-1 min-w-[20px] text-brand-600">
-                                            <CheckCircle2 size={20} />
-                                        </div>
+                                        <div className="mt-1.5 min-w-[8px] h-2 w-2 rounded-full bg-brand-accent shadow-sm"></div>
                                         <span className="text-gray-700">{item}</span>
                                     </li>
                                 ))}
@@ -211,8 +209,8 @@ const App: React.FC = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                         {content.vision.points.map((point, idx) => (
-                            <div key={idx} className="flex items-center gap-4 bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-colors backdrop-blur-sm">
-                                <div className="w-2 h-2 rounded-full bg-brand-accent"></div>
+                            <div key={idx} className="flex items-center gap-4 bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-colors backdrop-blur-sm group">
+                                <div className="min-w-[8px] h-2 w-2 rounded-full bg-brand-accent group-hover:scale-125 transition-transform"></div>
                                 <span className="text-gray-200">{point}</span>
                             </div>
                         ))}
@@ -271,10 +269,10 @@ const App: React.FC = () => {
                         <img src="/logo-full.webp" alt="Albasma Seal" className="w-24 h-24 rounded-full shadow-lg border-2 border-brand-600" />
                     </div>
                     <p className="mb-4 text-white font-bold text-xl">
-                        {isRTL ? 'شركة البصمة الدولية للتفتيش و المطابقة' : 'Albsma-aldwlha'}
+                        {isRTL ? 'شركة البصمة الدولية للتفتيش و المطابقة' : 'Albasma-Aldawlia for Inspection and Conformity'}
                     </p>
                     <p className="text-sm">
-                        &copy; {new Date().getFullYear()} {isRTL ? 'البصمة الدولية للتفتيش و المطابقة' : 'Albsma-aldwlha'}. All rights reserved.
+                        &copy; {new Date().getFullYear()} {isRTL ? 'البصمة الدولية للتفتيش و المطابقة' : 'Albasma-Aldawlia for Inspection and Conformity'}. All rights reserved.
                     </p>
                 </div>
             </footer>
