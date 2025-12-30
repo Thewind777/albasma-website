@@ -68,8 +68,8 @@ const App: React.FC = () => {
                         {/* Logo */}
                         <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollTo('hero')}>
                             <img
-                                src="/logo-seal.jpg"
-                                alt={isRTL ? 'البصمة الدولية' : 'Albsma-aldwlha'}
+                                src="/logo-full.webp"
+                                alt={isRTL ? 'البصمة الدولية للتفتيش و المطابقة' : 'Albsma-aldwlha'}
                                 className="h-14 w-14 rounded-full border border-brand-200 shadow-sm object-cover"
                             />
                         </div>
@@ -118,11 +118,8 @@ const App: React.FC = () => {
                 <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
                 <div className="absolute inset-0 z-0 bg-gradient-to-t from-brand-900 via-brand-900/80 to-transparent"></div>
 
-                <div className="container mx-auto px-4 relative z-10 text-center md:text-start flex flex-col md:flex-row items-center gap-12">
+                <div className="container mx-auto px-4 relative z-10 text-center md:text-start flex flex-col-reverse md:flex-row items-center gap-12">
                     <div className="flex-1 space-y-6">
-                        <div className="inline-block px-4 py-1 bg-brand-600/30 border border-brand-500/30 rounded-full text-brand-400 text-sm font-semibold mb-2">
-                            ISO/IEC 17020 Certified
-                        </div>
                         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                             {content.hero.title}
                         </h1>
@@ -138,11 +135,11 @@ const App: React.FC = () => {
                         </button>
                     </div>
                     {/* Abstract Visual Shape */}
-                    <div className="flex-1 hidden md:block relative">
+                    <div className="flex-1 block relative">
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-600/20 rounded-full blur-3xl"></div>
                         <img
-                            src="/logo-seal.jpg"
-                            alt="Albasma International Seal"
+                            src="/logo-full.webp"
+                            alt="Albasma International Logo"
                             className="relative rounded-full shadow-2xl border-4 border-brand-500/50 w-full max-w-md mx-auto animate-float"
                         />
                     </div>
@@ -226,62 +223,42 @@ const App: React.FC = () => {
             {/* Contact Section */}
             <section id="contact" className="py-20 bg-white">
                 <div className="container mx-auto px-4">
-                    <div className="flex flex-col lg:flex-row gap-12">
-                        <div className="flex-1">
-                            <h2 className="text-3xl font-bold mb-8 text-brand-900">{content.contact.title}</h2>
-                            <div className="space-y-8">
-                                <div className="flex items-center gap-6">
-                                    <div className="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center text-brand-600">
-                                        <MapPin size={24} />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold text-gray-900">{isRTL ? 'العنوان' : 'Address'}</h4>
-                                        <p className="text-gray-600">{content.contact.address}</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-center gap-6">
-                                    <div className="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center text-brand-600">
-                                        <Phone size={24} />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold text-gray-900">{isRTL ? 'الهاتف' : 'Phone'}</h4>
-                                        <p className="text-gray-600" dir="ltr">{content.contact.phone}</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-center gap-6">
-                                    <div className="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center text-brand-600">
-                                        <Mail size={24} />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold text-gray-900">{isRTL ? 'البريد الإلكتروني' : 'Email'}</h4>
-                                        <p className="text-gray-600">{content.contact.email}</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-16">
+                            <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-4">{content.contact.title}</h2>
+                            <div className="h-1 w-24 bg-brand-accent mx-auto rounded-full"></div>
                         </div>
 
-                        <div className="flex-1 bg-gray-50 p-8 rounded-2xl">
-                            <h3 className="text-xl font-bold mb-6">{content.contact.getInTouch}</h3>
-                            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                                <input
-                                    type="text"
-                                    placeholder={lang === 'en' ? "Name" : "الاسم"}
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-all"
-                                />
-                                <input
-                                    type="email"
-                                    placeholder={lang === 'en' ? "Email" : "البريد الإلكتروني"}
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-all"
-                                />
-                                <textarea
-                                    rows={4}
-                                    placeholder={lang === 'en' ? "Message" : "الرسالة"}
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-all"
-                                ></textarea>
-                                <button className="w-full bg-brand-600 text-white font-bold py-3 rounded-lg hover:bg-brand-700 transition-colors">
-                                    {content.contact.sendMessage}
-                                </button>
-                            </form>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                            <div className="flex flex-col items-center gap-4 p-6 bg-gray-50 rounded-2xl hover:shadow-md transition-shadow">
+                                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-brand-600 shadow-sm">
+                                    <MapPin size={28} />
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-gray-900 text-lg mb-1">{isRTL ? 'العنوان' : 'Address'}</h4>
+                                    <p className="text-gray-600">{content.contact.address}</p>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col items-center gap-4 p-6 bg-gray-50 rounded-2xl hover:shadow-md transition-shadow">
+                                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-brand-600 shadow-sm">
+                                    <Phone size={28} />
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-gray-900 text-lg mb-1">{isRTL ? 'الهاتف' : 'Phone'}</h4>
+                                    <p className="text-gray-600" dir="ltr">{content.contact.phone}</p>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col items-center gap-4 p-6 bg-gray-50 rounded-2xl hover:shadow-md transition-shadow">
+                                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-brand-600 shadow-sm">
+                                    <Mail size={28} />
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-gray-900 text-lg mb-1">{isRTL ? 'البريد الإلكتروني' : 'Email'}</h4>
+                                    <p className="text-gray-600">{content.contact.email}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -291,13 +268,13 @@ const App: React.FC = () => {
             <footer className="bg-brand-900 text-gray-400 py-12 border-t border-brand-800">
                 <div className="container mx-auto px-4 text-center">
                     <div className="flex justify-center mb-6">
-                        <img src="/logo-seal.jpg" alt="Albasma Seal" className="w-24 h-24 rounded-full shadow-lg border-2 border-brand-600" />
+                        <img src="/logo-full.webp" alt="Albasma Seal" className="w-24 h-24 rounded-full shadow-lg border-2 border-brand-600" />
                     </div>
                     <p className="mb-4 text-white font-bold text-xl">
-                        {isRTL ? 'شركة البصمة الدولية' : 'Albsma-aldwlha'}
+                        {isRTL ? 'شركة البصمة الدولية للتفتيش و المطابقة' : 'Albsma-aldwlha'}
                     </p>
                     <p className="text-sm">
-                        &copy; {new Date().getFullYear()} {isRTL ? 'البصمة الدولية' : 'Albsma-aldwlha'}. All rights reserved.
+                        &copy; {new Date().getFullYear()} {isRTL ? 'البصمة الدولية للتفتيش و المطابقة' : 'Albsma-aldwlha'}. All rights reserved.
                     </p>
                 </div>
             </footer>
