@@ -61,7 +61,7 @@ export const CONTENT: Record<'en' | 'ar', SiteContent> = {
       title: "تواصل معنا",
       address: "جنزور-ليبيا",
       phone: "+218 94 239 6162",
-      email: "info@albsma-aldwlha.ly",
+      email: "info@albasma-aldawlia.ly",
       getInTouch: "ابقى على تواصل",
       sendMessage: "إرسال رسالة"
     }
@@ -126,7 +126,7 @@ export const CONTENT: Record<'en' | 'ar', SiteContent> = {
       title: "Contact Us",
       address: "Janzoor-Libya",
       phone: "+218 94 239 6162",
-      email: "info@albsma-aldwlha.ly",
+      email: "info@albasma-aldawlia.ly",
       getInTouch: "Get In Touch",
       sendMessage: "Send Message"
     }
